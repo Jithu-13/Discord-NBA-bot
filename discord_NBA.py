@@ -557,10 +557,8 @@ def born(name):
 @client.command()
 async def mstat(ctx,year,*,name):
     s=mobile_stats(year,name)
-    await ctx.send('```')
     for h,s in s.items():
         await ctx.send(f'```{h} : {s}```')
-    await ctx.send('```')
 
 
 @client.command()
@@ -574,7 +572,7 @@ async def testing(ctx):
 
 
 
-client.run('NzIzMjA4MDE4ODMzMTc4NzU0.XvAVtQ.Kkyre92gAgHjfvcj2x5VMV8T2Ck')
+client.run(discord-token)
 
 
 
